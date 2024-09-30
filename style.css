@@ -1,0 +1,43 @@
+﻿body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameArea {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/background.png'); /* Фон уровня */
+}
+
+#character {
+    width: 40px; /* Ширина персонажа */
+    height: 40px; /* Высота персонажа */
+    background-image: url('assets/character.png'); /* Изображение персонажа */
+    background-size: cover; /* Масштабирование изображения */
+    position: absolute;
+    bottom: 0;
+}
+
+.platform {
+    width: 60px; /* Ширина платформы */
+    height: 10px; /* Высота платформы */
+    background-image: url('assets/platform.png'); /* Изображение платформы */
+    background-size: cover; /* Масштабирование изображения */
+    position: absolute;
+}
+
+.enemy {
+    width: 40px; /* Ширина врага */
+    height: 40px; /* Высота врага */
+    background-image: url('assets/enemy.png'); /* Изображение врага */
+    background-size: cover; /* Масштабирование изображения */
+    position: absolute;
+}
+
+#controls {
+    margin-top: 20px;
+}
